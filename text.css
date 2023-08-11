@@ -1,0 +1,57 @@
+.parent{
+    
+    background-color: green;
+    height: 400px;
+    width: 400px;
+    position: absolute;
+    align-items: center;
+    left: 60vh;
+  
+}
+
+.child{
+    background-color:red;
+    width: 50%;
+    height: 50%;
+    transition: 1s ease-in-out;
+    border-radius: 100px;
+    border: solid;
+    border-color: white;
+    border-style: dashed;
+    animation: left-to-right 1s ease-in forwards infinite alternate;
+    
+
+}
+
+.parent:hover .child{
+    background: white;
+    transform: translateX(100%);
+    border-color: red;
+    border-style: dashed;
+  
+
+}
+
+@keyframes left-to-right{
+    0%{
+        transform: translateX(0);
+    }
+
+    33%{
+        transform: translateX(100%);
+    }
+
+    66%{
+        transform: translateX(100%) translateY(100%);
+    }
+
+    100%{
+        transform: translateY(100%) 
+    }
+    
+
+}
+
+
+
+
